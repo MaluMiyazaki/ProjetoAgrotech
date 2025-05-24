@@ -8,6 +8,7 @@
 
 #dishes {
     width: 100%;
+    height: 10;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -20,36 +21,26 @@
     align-items: center;
     border-radius: 20px;
     gap: 18px;
-    width: 25%;
+    margin: 12px;
+    width: 50%;
     padding: 20px;
     background-color: var(--color-neutral-0);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position-anchor: relative;
     overflow: hidden;
 }
 
-.dish-heart {
-    position: absolute;
-    background-color: var(--color-primary-6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.563rem;
-    color: var(--color-primary-1);
-    width: 70px;
-    height: 70px;
-    right: -10px;
-    top: -10px;
-    border-radius: 0px 37.5px 0px 42.5px;
-}
 
 .dish-description {
     color: #434343;
+    height: 50%;
     text-align: center;
 }
-
-.dish-rate i {
-    color: var(--color-primary-6);
+.dish-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .dish-price {
@@ -65,7 +56,8 @@
     }
 
     .dish {
-        width: calc(50% - 12px);
+        width: calc(10% - 12px);
+        height: 10%;
     }
 }
 
